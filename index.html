@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Saachi Bhosale - Computer Science Engineering Student | Data Science | Cybersecurity | Machine Learning">
+          content="Saachi Bhosale - Final-Year Computer Science Engineering Student | Data Science | Machine Learning | Cybersecurity">
 
     <title>Saachi Bhosale | Portfolio</title>
 
+
     <style>
 
-        /* =========================
+        /* =====================================================
            GLOBAL
-        ========================= */
+        ===================================================== */
 
         * {
             margin: 0;
@@ -23,524 +26,830 @@
             scroll-behavior: smooth;
         }
 
+
         :root {
-            --pink: #ff4f9a;
-            --dark-pink: #d92d78;
-            --light-pink: #fff0f7;
-            --soft-pink: #ffe0ed;
-            --text: #241b22;
-            --gray: #756a72;
-            --white: #ffffff;
-            --border: #f1dbe6;
-            --shadow: 0 15px 45px rgba(170, 45, 105, 0.12);
+
+            --navy: #14213D;
+            --dark-navy: #0B132B;
+
+            --rose: #C85C83;
+            --dark-rose: #A94468;
+
+            --light-rose: #F8EEF2;
+            --soft-rose: #F3DCE5;
+
+            --text: #1F2937;
+            --gray: #667085;
+
+            --white: #FFFFFF;
+            --background: #F8FAFC;
+
+            --border: #E5E7EB;
+
+            --shadow:
+                0 15px 40px rgba(20, 33, 61, 0.08);
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
             color: var(--text);
+
             background:
-                radial-gradient(circle at 85% 5%, rgba(255,79,154,0.16), transparent 25%),
-                radial-gradient(circle at 5% 40%, rgba(255,190,220,0.18), transparent 25%),
-                #fffafd;
+                radial-gradient(
+                    circle at 90% 5%,
+                    rgba(200, 92, 131, 0.10),
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 5% 35%,
+                    rgba(20, 33, 61, 0.06),
+                    transparent 25%
+                ),
+
+                var(--background);
+
             line-height: 1.6;
         }
+
 
         a {
             text-decoration: none;
             color: inherit;
         }
 
+
         section {
+
             max-width: 1150px;
+
             margin: auto;
-            padding: 90px 25px;
+
+            padding: 95px 25px;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            NAVIGATION
-        ========================= */
+        ===================================================== */
 
         nav {
+
             position: sticky;
+
             top: 0;
+
             z-index: 1000;
 
-            background: rgba(255, 250, 253, 0.88);
+            background:
+                rgba(248, 250, 252, 0.92);
+
             backdrop-filter: blur(15px);
 
-            border-bottom: 1px solid var(--border);
+            border-bottom:
+                1px solid var(--border);
         }
 
+
         .nav-container {
+
             max-width: 1150px;
+
             margin: auto;
 
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
 
             padding: 17px 25px;
         }
 
+
         .logo {
+
             font-size: 1.5rem;
+
             font-weight: 900;
-            color: var(--dark-pink);
-            letter-spacing: -2px;
+
+            color: var(--navy);
+
+            letter-spacing: -1px;
         }
 
+
         .nav-links {
+
             display: flex;
-            gap: 25px;
+
+            gap: 28px;
+
             align-items: center;
         }
 
+
         .nav-links a {
+
             color: var(--gray);
+
             font-size: 0.9rem;
+
             font-weight: 600;
-            transition: 0.3s;
+
+            transition: 0.25s;
         }
+
 
         .nav-links a:hover {
-            color: var(--pink);
+
+            color: var(--rose);
         }
 
-        /* =========================
+
+
+        /* =====================================================
            HERO
-        ========================= */
+        ===================================================== */
 
         .hero {
+
             min-height: 88vh;
 
             max-width: 1150px;
+
             margin: auto;
 
-            padding: 90px 25px;
+            padding: 85px 25px;
 
             display: grid;
-            grid-template-columns: 1.4fr 0.6fr;
+
+            grid-template-columns:
+                1.35fr
+                0.65fr;
 
             align-items: center;
 
-            gap: 60px;
+            gap: 70px;
         }
 
+
         .tag {
+
             display: inline-block;
 
-            background: var(--light-pink);
-            color: var(--dark-pink);
+            background: var(--light-rose);
+
+            color: var(--dark-rose);
 
             padding: 8px 15px;
 
             border-radius: 50px;
 
-            font-size: 0.8rem;
-            font-weight: bold;
+            font-size: 0.75rem;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
 
             margin-bottom: 20px;
         }
 
+
         .hero h1 {
-            font-size: clamp(3.2rem, 7vw, 6.5rem);
+
+            font-size:
+                clamp(
+                    3.2rem,
+                    7vw,
+                    6.3rem
+                );
 
             line-height: 0.95;
 
-            letter-spacing: -6px;
+            letter-spacing: -5px;
 
             margin-bottom: 25px;
+
+            color: var(--dark-navy);
         }
 
+
         .gradient {
-            background: linear-gradient(
-                90deg,
-                #d92d78,
-                #ff4f9a,
-                #ff86b9
-            );
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--navy),
+                    var(--rose)
+                );
 
             -webkit-background-clip: text;
+
             background-clip: text;
 
             color: transparent;
         }
 
+
         .hero p {
+
             max-width: 700px;
 
             color: var(--gray);
 
-            font-size: 1.1rem;
+            font-size: 1.08rem;
 
             margin-bottom: 30px;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            BUTTONS
-        ========================= */
+        ===================================================== */
 
         .buttons {
+
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
+
         .btn {
+
             display: inline-flex;
 
             align-items: center;
+
             justify-content: center;
 
-            padding: 13px 20px;
+            padding: 12px 19px;
 
-            border-radius: 50px;
+            border-radius: 9px;
 
-            font-weight: bold;
+            font-weight: 700;
 
-            border: 1px solid var(--border);
+            font-size: 0.9rem;
 
-            background: white;
+            border:
+                1px solid var(--border);
+
+            background: var(--white);
 
             transition: 0.25s;
 
-            box-shadow: 0 7px 20px rgba(100,30,70,0.06);
+            box-shadow:
+                0 6px 18px
+                rgba(20, 33, 61, 0.05);
         }
+
 
         .btn:hover {
-            transform: translateY(-4px);
 
-            box-shadow: 0 15px 30px rgba(170,45,105,0.15);
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 12px 25px
+                rgba(20, 33, 61, 0.10);
         }
+
 
         .btn-primary {
-            background: var(--pink);
-            color: white;
-            border-color: var(--pink);
+
+            background: var(--navy);
+
+            color: var(--white);
+
+            border-color: var(--navy);
         }
+
 
         .btn-primary:hover {
-            background: var(--dark-pink);
+
+            background: var(--rose);
+
+            border-color: var(--rose);
         }
 
-        /* =========================
+
+
+        /* =====================================================
            HERO CARD
-        ========================= */
+        ===================================================== */
 
         .hero-card {
-            background: rgba(255,255,255,0.8);
 
-            border: 1px solid var(--border);
+            background:
+                rgba(255, 255, 255, 0.9);
 
-            border-radius: 30px;
+            border:
+                1px solid var(--border);
+
+            border-radius: 28px;
 
             padding: 35px;
 
             box-shadow: var(--shadow);
 
-            animation: float 4s ease-in-out infinite;
+            position: relative;
         }
 
-        @keyframes float {
 
-            0%, 100% {
-                transform: translateY(0);
-            }
+        .hero-card::before {
 
-            50% {
-                transform: translateY(-10px);
-            }
+            content: "";
+
+            position: absolute;
+
+            width: 120px;
+
+            height: 120px;
+
+            border-radius: 50%;
+
+            background: var(--light-rose);
+
+            right: -40px;
+
+            top: -40px;
+
+            z-index: 0;
         }
 
-        .avatar {
-            width: 90px;
-            height: 90px;
 
-            border-radius: 28px;
+        .hero-card > * {
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            position: relative;
 
-            color: white;
+            z-index: 1;
+        }
 
-            font-size: 2rem;
-            font-weight: 900;
 
-            background:
-                linear-gradient(
-                    135deg,
-                    #d92d78,
-                    #ff82b7
-                );
+
+        /* =====================================================
+           PROFILE PHOTO
+        ===================================================== */
+
+        .profile-photo {
+
+            width: 145px;
+
+            height: 145px;
+
+            border-radius: 50%;
+
+            overflow: hidden;
 
             margin-bottom: 25px;
+
+            border:
+                4px solid
+                var(--soft-rose);
+
+            box-shadow:
+                0 15px 35px
+                rgba(20, 33, 61, 0.15);
         }
+
+
+        .profile-photo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position: center;
+        }
+
 
         .hero-card h3 {
+
             margin-bottom: 10px;
+
+            color: var(--navy);
+
+            font-size: 1.15rem;
         }
 
+
         .hero-card p {
+
             color: var(--gray);
+
             font-size: 0.9rem;
         }
 
+
         .quick-stat {
-            border-top: 1px solid var(--border);
+
+            border-top:
+                1px solid var(--border);
 
             margin-top: 20px;
+
             padding-top: 15px;
         }
 
+
         .quick-stat strong {
+
             display: block;
+
+            color: var(--navy);
         }
+
 
         .quick-stat span {
+
             color: var(--gray);
-            font-size: 0.85rem;
+
+            font-size: 0.84rem;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            SECTION HEADINGS
-        ========================= */
+        ===================================================== */
 
         .section-label {
-            color: var(--dark-pink);
+
+            color: var(--rose);
 
             text-transform: uppercase;
 
             letter-spacing: 3px;
 
-            font-size: 0.75rem;
+            font-size: 0.72rem;
 
             font-weight: 900;
         }
 
+
         h2 {
-            font-size: clamp(2rem, 4vw, 3.5rem);
+
+            font-size:
+                clamp(
+                    2rem,
+                    4vw,
+                    3.4rem
+                );
 
             letter-spacing: -2px;
 
-            margin: 10px 0 35px;
+            margin:
+                10px 0 35px;
+
+            color: var(--dark-navy);
         }
 
-        /* =========================
+
+
+        /* =====================================================
+           CARDS
+        ===================================================== */
+
+        .card {
+
+            background:
+                var(--white);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 20px;
+
+            padding: 28px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(20, 33, 61, 0.045);
+
+            transition: 0.25s;
+        }
+
+
+        .card:hover {
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .card h3 {
+
+            margin-bottom: 10px;
+
+            color: var(--navy);
+        }
+
+
+        .card p {
+
+            color: var(--gray);
+        }
+
+
+
+        /* =====================================================
            ABOUT
-        ========================= */
+        ===================================================== */
 
         .about-grid {
+
             display: grid;
 
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:
+                1fr 1fr;
 
             gap: 20px;
         }
 
-        .card {
-            background: white;
 
-            border: 1px solid var(--border);
+        .about-grid .card {
 
-            border-radius: 22px;
-
-            padding: 28px;
-
-            box-shadow: 0 10px 30px rgba(100,30,70,0.05);
+            min-height: 190px;
         }
 
-        .card h3 {
-            margin-bottom: 10px;
-        }
 
-        .card p {
-            color: var(--gray);
-        }
 
-        /* =========================
+        /* =====================================================
            EXPERIENCE
-        ========================= */
+        ===================================================== */
 
         .experience-card {
+
             display: grid;
 
-            grid-template-columns: 160px 1fr;
+            grid-template-columns:
+                170px 1fr;
 
-            gap: 25px;
+            gap: 30px;
         }
+
 
         .date {
-            color: var(--dark-pink);
 
-            font-weight: bold;
+            color: var(--rose);
+
+            font-weight: 800;
+
+            font-size: 0.9rem;
         }
 
+
         .company {
+
             font-size: 1.5rem;
 
             font-weight: 800;
 
-            margin-bottom: 5px;
+            color: var(--navy);
+
+            margin-bottom: 4px;
         }
 
-        .job-title {
-            color: var(--pink);
 
-            font-weight: bold;
+        .job-title {
+
+            color: var(--rose);
+
+            font-weight: 700;
 
             margin-bottom: 15px;
         }
 
+
         .experience-list {
+
             padding-left: 20px;
 
             color: var(--gray);
         }
 
+
         .experience-list li {
-            margin-bottom: 8px;
+
+            margin-bottom: 9px;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            RESEARCH
-        ========================= */
+        ===================================================== */
 
         .research-grid {
+
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:
+                repeat(2, 1fr);
 
             gap: 20px;
         }
 
+
         .research-card {
+
             position: relative;
 
             overflow: hidden;
         }
 
+
         .research-card::before {
+
             content: "";
 
             position: absolute;
 
-            width: 140px;
-            height: 140px;
+            width: 150px;
+
+            height: 150px;
 
             border-radius: 50%;
 
-            background: var(--soft-pink);
+            background:
+                var(--light-rose);
 
-            right: -60px;
-            top: -60px;
+            right: -70px;
+
+            top: -70px;
         }
 
+
         .research-card > * {
+
             position: relative;
         }
 
-        .research-number {
-            color: var(--pink);
 
-            font-size: 0.8rem;
+        .research-number {
+
+            color: var(--rose);
+
+            font-size: 0.75rem;
 
             font-weight: 900;
 
             letter-spacing: 2px;
+
+            margin-bottom: 12px;
         }
 
-        /* =========================
+
+        .research-card h3 {
+
+            line-height: 1.4;
+
+            margin-bottom: 14px;
+        }
+
+
+
+        /* =====================================================
            PROJECTS
-        ========================= */
+        ===================================================== */
 
         .projects {
+
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:
+                repeat(2, 1fr);
 
             gap: 20px;
         }
 
+
         .project-card {
-            transition: 0.3s;
 
             position: relative;
 
             overflow: hidden;
         }
 
-        .project-card:hover {
-            transform: translateY(-7px);
 
-            box-shadow: var(--shadow);
+        .project-card:hover {
+
+            transform:
+                translateY(-6px);
         }
 
+
         .project-icon {
+
             width: 50px;
+
             height: 50px;
 
-            border-radius: 15px;
+            border-radius: 13px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
-            background: var(--light-pink);
+            background:
+                var(--light-rose);
 
-            font-size: 1.4rem;
+            font-size: 1.3rem;
 
             margin-bottom: 18px;
         }
 
+
         .project-card h3 {
+
             margin-bottom: 10px;
+
+            font-size: 1.15rem;
         }
+
 
         .project-card p {
+
             color: var(--gray);
 
-            margin-bottom: 15px;
+            margin-bottom: 18px;
+
+            font-size: 0.92rem;
         }
 
+
         .project-tech {
+
             display: flex;
+
             flex-wrap: wrap;
 
             gap: 7px;
         }
 
+
         .tech {
-            padding: 5px 9px;
+
+            padding:
+                5px 9px;
 
             border-radius: 50px;
 
-            background: var(--light-pink);
+            background:
+                var(--light-rose);
 
-            color: var(--rose);
+            color:
+                var(--dark-rose);
 
-            font-size: 0.72rem;
+            font-size: 0.7rem;
 
-            font-weight: bold;
+            font-weight: 800;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            SKILLS
-        ========================= */
+        ===================================================== */
 
         .skill-groups {
+
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:
+                repeat(2, 1fr);
 
             gap: 20px;
         }
 
+
         .skill-group h3 {
+
             margin-bottom: 15px;
         }
 
+
         .skill-pills {
+
             display: flex;
 
             flex-wrap: wrap;
@@ -548,92 +857,128 @@
             gap: 8px;
         }
 
+
         .pill {
-            background: var(--light-pink);
 
-            color: var(--rose);
+            background:
+                var(--light-rose);
 
-            border: 1px solid #f5cfe0;
+            color:
+                var(--dark-rose);
 
-            padding: 8px 12px;
+            border:
+                1px solid
+                #EDD2DD;
+
+            padding:
+                7px 11px;
 
             border-radius: 50px;
 
-            font-size: 0.82rem;
+            font-size: 0.78rem;
 
             font-weight: 700;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            EDUCATION
-        ========================= */
+        ===================================================== */
 
         .education-card {
+
             display: flex;
 
-            justify-content: space-between;
+            justify-content:
+                space-between;
 
             gap: 25px;
 
             align-items: center;
         }
 
+
         .education-card h3 {
+
             font-size: 1.3rem;
         }
 
+
         .education-card p {
+
             color: var(--gray);
         }
 
+
         .cgpa {
-            background: var(--light-pink);
 
-            color: var(--dark-pink);
+            background:
+                var(--navy);
 
-            padding: 12px 18px;
+            color:
+                var(--white);
+
+            padding:
+                11px 18px;
 
             border-radius: 50px;
 
-            font-weight: bold;
+            font-weight: 800;
 
             white-space: nowrap;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            CONTACT
-        ========================= */
+        ===================================================== */
 
         .contact {
+
             text-align: center;
 
             background:
+
                 linear-gradient(
                     135deg,
-                    #fff0f7,
-                    white
+                    #F8EEF2,
+                    #FFFFFF
                 );
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
-            border-radius: 35px;
+            border-radius: 30px;
 
-            padding: 70px 25px;
+            padding:
+                70px 25px;
+
+            box-shadow:
+                var(--shadow);
         }
 
+
         .contact h2 {
+
             margin-bottom: 15px;
         }
 
+
         .contact p {
+
             color: var(--gray);
 
-            max-width: 600px;
+            max-width: 650px;
 
-            margin: auto auto 25px;
+            margin:
+                auto auto 25px;
         }
 
+
         .contact-links {
+
             display: flex;
 
             justify-content: center;
@@ -643,70 +988,95 @@
             gap: 12px;
         }
 
-        /* =========================
+
+
+        /* =====================================================
            FOOTER
-        ========================= */
+        ===================================================== */
 
         footer {
+
             text-align: center;
 
             padding: 35px;
 
             color: var(--gray);
 
-            font-size: 0.85rem;
+            font-size: 0.82rem;
+
+            border-top:
+                1px solid var(--border);
         }
 
-        /* =========================
+
+
+        /* =====================================================
            RESPONSIVE
-        ========================= */
+        ===================================================== */
 
         @media (max-width: 800px) {
 
             .nav-links {
+
                 display: none;
             }
 
+
             .hero {
+
                 grid-template-columns: 1fr;
 
                 padding-top: 60px;
+
+                gap: 40px;
             }
 
+
             .hero h1 {
+
                 letter-spacing: -4px;
             }
+
 
             .about-grid,
             .research-grid,
             .projects,
             .skill-groups {
+
                 grid-template-columns: 1fr;
             }
 
+
             .experience-card {
+
                 grid-template-columns: 1fr;
 
                 gap: 8px;
             }
 
+
             .education-card {
+
                 flex-direction: column;
 
                 align-items: flex-start;
             }
+
         }
 
     </style>
+
 </head>
+
 
 
 <body>
 
 
-<!-- =========================
+
+<!-- =====================================================
      NAVIGATION
-========================= -->
+===================================================== -->
 
 <nav>
 
@@ -715,6 +1085,7 @@
         <a href="#home" class="logo">
             SB.
         </a>
+
 
         <div class="nav-links">
 
@@ -728,6 +1099,8 @@
 
             <a href="#skills">Skills</a>
 
+            <a href="#education">Education</a>
+
             <a href="#contact">Contact</a>
 
         </div>
@@ -737,11 +1110,13 @@
 </nav>
 
 
-<!-- =========================
+
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
 <header class="hero" id="home">
+
 
     <div>
 
@@ -749,21 +1124,32 @@
             FINAL-YEAR CSE • DATA SCIENCE
         </span>
 
+
         <h1>
+
             Hi, I'm
+
             <span class="gradient">
                 Saachi.
             </span>
+
         </h1>
 
+
         <p>
-            Computer Science Engineering student at BITS Pilani, Dubai
-            with a Minor in Data Science. I build projects across
-            cybersecurity, machine learning, data analytics and automation.
+
+            Final-year Computer Science Engineering student at
+            BITS Pilani, Dubai, pursuing a Minor in Data Science.
+            My work spans data analytics, machine learning,
+            cybersecurity, software development and workflow
+            automation, with a focus on applying technical and
+            analytical skills to practical problems.
+
         </p>
 
 
         <div class="buttons">
+
 
             <a
                 href="#projects"
@@ -772,13 +1158,15 @@
                 View My Work →
             </a>
 
+
             <a
                 href="2023A7PS0368U - Saachi Bhosale .pdf"
                 class="btn"
-                download="2023A7PS0368U - Saachi Bhosale .pdf"
+                download
             >
                 Download CV ↓
             </a>
+
 
             <a
                 href="https://www.linkedin.com/in/saachi-bhosale-sb25"
@@ -788,33 +1176,48 @@
                 LinkedIn ↗
             </a>
 
+
             <a
-                href="https://github.com/YOUR_GITHUB_USERNAME"
+                href="https://github.com/saachi25"
                 target="_blank"
                 class="btn"
             >
                 GitHub ↗
             </a>
 
+
         </div>
 
     </div>
 
 
+
+    <!-- PROFILE CARD -->
+
     <div class="hero-card">
 
-        <div class="avatar">
-            SB
+
+        <div class="profile-photo">
+
+            <img
+                src="Photo.jpg"
+                alt="Saachi Bhosale"
+            >
+
         </div>
 
+
         <h3>
-            CS × Data × Cybersecurity
+            Computer Science • Data Science • Cybersecurity
         </h3>
 
+
         <p>
-            Interested in building practical technology
-            that combines analytical thinking with real-world
-            problem solving.
+
+            Interested in developing data-driven,
+            analytical and technology-focused solutions
+            to real-world problems.
+
         </p>
 
 
@@ -838,7 +1241,7 @@
             </strong>
 
             <span>
-                Data • ML • Analytics
+                Data Analytics • Machine Learning
             </span>
 
         </div>
@@ -847,7 +1250,7 @@
         <div class="quick-stat">
 
             <strong>
-                Research + Projects
+                Research & Technical Projects
             </strong>
 
             <span>
@@ -856,268 +1259,405 @@
 
         </div>
 
+
     </div>
+
 
 </header>
 
 
 
-<!-- =========================
+<!-- =====================================================
      ABOUT
-========================= -->
+===================================================== -->
 
 <section id="about">
+
 
     <span class="section-label">
         About Me
     </span>
 
+
     <h2>
+
         Turning ideas into
-        <span class="gradient">working systems.</span>
+
+        <span class="gradient">
+            practical solutions.
+        </span>
+
     </h2>
+
 
 
     <div class="about-grid">
 
+
         <div class="card">
 
+
             <h3>
-                Who I Am
+                Professional Profile
             </h3>
 
+
             <p>
-                I'm a final-year Computer Science Engineering student
-                at BITS Pilani, Dubai, with a Minor in Data Science.
-                My experience combines software development,
-                data analytics, machine learning, cybersecurity
+
+                I am a final-year Computer Science Engineering
+                student at BITS Pilani, Dubai, pursuing a Minor
+                in Data Science. My academic and project
+                experience covers software development, data
+                analytics, machine learning, cybersecurity
                 research and workflow automation.
+
             </p>
 
+
         </div>
+
 
 
         <div class="card">
 
+
             <h3>
-                What I Like Building
+                Professional Interests
             </h3>
 
+
             <p>
-                I enjoy working on projects where data, AI and
-                software engineering come together — from
-                cybersecurity risk modelling and ML prediction
-                systems to automation tools and web applications.
+
+                I am interested in developing data-driven and
+                technology-focused solutions that combine
+                software engineering, machine learning,
+                cybersecurity and analytics. My work focuses
+                on applying computational methods to practical
+                problems while developing scalable, analytical
+                and industry-relevant solutions.
+
             </p>
 
+
         </div>
+
 
     </div>
+
 
 </section>
 
 
 
-<!-- =========================
+<!-- =====================================================
      EXPERIENCE
-========================= -->
+===================================================== -->
 
 <section id="experience">
+
 
     <span class="section-label">
         Experience
     </span>
 
+
     <h2>
-        Where I've
-        <span class="gradient">worked.</span>
+
+        Professional
+
+        <span class="gradient">
+            experience.
+        </span>
+
     </h2>
+
 
 
     <div class="card experience-card">
 
+
         <div class="date">
+
             Jun 2025 — Aug 2025
+
         </div>
 
 
+
         <div>
+
 
             <div class="company">
                 Casamia
             </div>
 
+
             <div class="job-title">
+
                 Data Analyst Intern • Dubai
+
             </div>
+
 
 
             <ul class="experience-list">
 
-                <li>
-                    Built and maintained a sister company website
-                    including front-end development and content integration.
-                </li>
 
                 <li>
-                    Performed web scraping to collect and structure
-                    external data for business use.
+
+                    Developed and maintained a sister-company
+                    website, including front-end implementation,
+                    content integration and structured data.
+
                 </li>
 
-                <li>
-                    Automated workflows using Microsoft Power Apps,
-                    Power Automate and n8n.
-                </li>
 
                 <li>
-                    Developed a machine-learning-driven PowerPoint
-                    generator using Flask, HTML and SQL.
+
+                    Performed web scraping using Python-based
+                    tools to collect, structure and prepare
+                    external product data.
+
                 </li>
 
+
                 <li>
-                    Implemented AI-powered data extraction for
-                    internal reporting.
+
+                    Designed workflow automation solutions using
+                    Microsoft Power Apps, Power Automate and n8n.
+
                 </li>
+
+
+                <li>
+
+                    Developed a Flask-based PowerPoint generation
+                    application integrating HTML, SQL and
+                    machine-learning concepts.
+
+                </li>
+
+
+                <li>
+
+                    Implemented AI-assisted data extraction
+                    workflows for internal business processes
+                    and reporting.
+
+                </li>
+
 
             </ul>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
 
 
-<!-- =========================
+<!-- =====================================================
      RESEARCH
-========================= -->
+===================================================== -->
 
 <section id="research">
+
 
     <span class="section-label">
         Research
     </span>
 
+
     <h2>
-        Questions worth
-        <span class="gradient">exploring.</span>
+
+        Research and
+
+        <span class="gradient">
+            technical investigation.
+        </span>
+
     </h2>
+
 
 
     <div class="research-grid">
 
 
+
+        <!-- RESEARCH 01 -->
+
         <div class="card research-card">
+
 
             <div class="research-number">
                 RESEARCH 01
             </div>
 
+
             <h3>
-                Improving Risk Analysis and Defense Prioritization
-                in Cybersecurity Using Enhanced PageRank and
-                Knapsack Optimization
+
+                Improving Risk Analysis and Defense
+                Prioritization in Cybersecurity Using
+                Enhanced PageRank and Knapsack Optimization
+
             </h3>
 
+
             <p>
-                Co-developed a modified PageRank approach combined
-                with knapsack-based cost optimization to rank and
-                select cybersecurity defense actions under budget
-                constraints.
+
+                Co-developed a modified PageRank-based
+                approach for analysing cybersecurity attack
+                graphs and prioritising defensive measures.
+                The research combines risk propagation with
+                knapsack-based cost optimisation to identify
+                defence strategies under budget constraints.
+
             </p>
 
+
             <br>
+
 
             <span class="pill">
                 Submitted for Publication
             </span>
 
+
         </div>
 
 
 
+        <!-- RESEARCH 02 -->
+
         <div class="card research-card">
+
 
             <div class="research-number">
                 RESEARCH 02
             </div>
 
+
             <h3>
+
                 Design of Meta Attack Language for
                 Healthcare Cyberinfrastructure
+
             </h3>
 
+
             <p>
-                Ongoing research into a domain-specific Meta Attack
-                Language for formally modelling threats,
-                vulnerabilities and attack paths across healthcare
-                IT and medical device infrastructure.
+
+                Ongoing research investigating the design of
+                a domain-specific Meta Attack Language for
+                healthcare cyberinfrastructure. The study
+                focuses on modelling healthcare assets,
+                vulnerabilities, threats and potential attack
+                paths to support structured cybersecurity
+                risk assessment.
+
             </p>
 
+
             <br>
+
 
             <span class="pill">
                 Ongoing Research
             </span>
+
 
         </div>
 
 
     </div>
 
+
 </section>
 
 
 
-<!-- =========================
+<!-- =====================================================
      PROJECTS
-========================= -->
+===================================================== -->
 
 <section id="projects">
+
 
     <span class="section-label">
         Projects
     </span>
 
+
     <h2>
-        Things I've
-        <span class="gradient">built.</span>
+
+        Selected
+
+        <span class="gradient">
+            technical work.
+        </span>
+
     </h2>
 
 
+
     <div class="projects">
+
 
 
         <!-- PROJECT 1 -->
 
         <div class="card project-card">
 
+
             <div class="project-icon">
                 🛡️
             </div>
+
 
             <h3>
                 Budget-Constrained Defense Prioritization
             </h3>
 
+
             <p>
-                Python framework applying modified PageRank and
-                cost-aware optimization to prioritize cybersecurity
-                defenses under limited budgets.
+
+                Developed a cybersecurity risk-analysis
+                framework using modified PageRank and
+                budget-constrained optimisation to rank
+                attack-graph nodes and prioritise defensive
+                measures according to available resources.
+
             </p>
+
 
             <div class="project-tech">
 
-                <span class="tech">Python</span>
+                <span class="tech">
+                    Python
+                </span>
 
-                <span class="tech">NetworkX</span>
+                <span class="tech">
+                    NetworkX
+                </span>
 
-                <span class="tech">PageRank</span>
+                <span class="tech">
+                    PageRank
+                </span>
 
-                <span class="tech">Cybersecurity</span>
+                <span class="tech">
+                    Knapsack
+                </span>
+
+                <span class="tech">
+                    Cybersecurity
+                </span>
 
             </div>
+
 
         </div>
 
@@ -1127,29 +1667,43 @@
 
         <div class="card project-card">
 
+
             <div class="project-icon">
                 🔐
             </div>
+
 
             <h3>
                 Cryptographic Access-Control Framework
             </h3>
 
+
             <p>
-                Designed a framework combining cryptographic
-                techniques and access-control policies to secure
-                file read, write and share operations.
+
+                Designed a security framework integrating
+                cryptographic techniques with access-control
+                policies to regulate file read, write and
+                sharing operations.
+
             </p>
+
 
             <div class="project-tech">
 
-                <span class="tech">Encryption</span>
+                <span class="tech">
+                    Encryption
+                </span>
 
-                <span class="tech">Access Control</span>
+                <span class="tech">
+                    Access Control
+                </span>
 
-                <span class="tech">Security</span>
+                <span class="tech">
+                    Security
+                </span>
 
             </div>
+
 
         </div>
 
@@ -1159,32 +1713,48 @@
 
         <div class="card project-card">
 
+
             <div class="project-icon">
                 🏎️
             </div>
 
+
             <h3>
-                F1 Race Outcome Predictions
+                F1 Race Outcome Prediction
             </h3>
 
+
             <p>
-                Machine learning pipeline using multi-season
-                Formula 1 data for grid and race outcome prediction,
-                including preprocessing, feature engineering and
-                hyperparameter tuning.
+
+                Developed a machine-learning pipeline using
+                multi-season Formula 1 data for predicting
+                race outcomes. The workflow included data
+                preprocessing, feature engineering, model
+                experimentation and hyperparameter tuning.
+
             </p>
+
 
             <div class="project-tech">
 
-                <span class="tech">Python</span>
+                <span class="tech">
+                    Python
+                </span>
 
-                <span class="tech">Scikit-learn</span>
+                <span class="tech">
+                    Scikit-learn
+                </span>
 
-                <span class="tech">Machine Learning</span>
+                <span class="tech">
+                    Pandas
+                </span>
 
-                <span class="tech">Pandas</span>
+                <span class="tech">
+                    Machine Learning
+                </span>
 
             </div>
+
 
         </div>
 
@@ -1194,31 +1764,47 @@
 
         <div class="card project-card">
 
+
             <div class="project-icon">
                 🧠
             </div>
+
 
             <h3>
                 Hybrid Cluster-Routing Classifier
             </h3>
 
+
             <p>
-                Two-stage machine learning pipeline using K-Means
-                clustering and specialist classifiers to predict
-                academic stress profiles.
+
+                Developed a two-stage machine-learning
+                pipeline combining K-Means clustering with
+                specialist classifiers to identify and
+                classify academic stress profiles.
+
             </p>
+
 
             <div class="project-tech">
 
-                <span class="tech">K-Means</span>
+                <span class="tech">
+                    K-Means
+                </span>
 
-                <span class="tech">SVM</span>
+                <span class="tech">
+                    SVM
+                </span>
 
-                <span class="tech">ML</span>
+                <span class="tech">
+                    Machine Learning
+                </span>
 
-                <span class="tech">Streamlit</span>
+                <span class="tech">
+                    Streamlit
+                </span>
 
             </div>
+
 
         </div>
 
@@ -1228,29 +1814,44 @@
 
         <div class="card project-card">
 
+
             <div class="project-icon">
                 🚗
             </div>
+
 
             <h3>
                 Smart Ride Demand Prediction
             </h3>
 
+
             <p>
-                Demand forecasting project using machine learning
-                and transfer learning to improve prediction across
-                regions with limited data.
+
+                Investigated machine-learning and transfer
+                learning approaches for predicting ride demand
+                across different regions, with an emphasis on
+                improving model performance where historical
+                data is limited.
+
             </p>
+
 
             <div class="project-tech">
 
-                <span class="tech">Machine Learning</span>
+                <span class="tech">
+                    Machine Learning
+                </span>
 
-                <span class="tech">Transfer Learning</span>
+                <span class="tech">
+                    Transfer Learning
+                </span>
 
-                <span class="tech">Python</span>
+                <span class="tech">
+                    Python
+                </span>
 
             </div>
+
 
         </div>
 
@@ -1260,216 +1861,378 @@
 
         <div class="card project-card">
 
+
             <div class="project-icon">
                 📊
             </div>
 
+
             <h3>
-                PPT Generator Web App
+                Automated PowerPoint Generation Web App
             </h3>
 
+
             <p>
-                Flask-based application that automatically generates
-                PowerPoint presentations from structured user inputs.
+
+                Developed a Flask-based web application that
+                generates structured PowerPoint presentations
+                from user-provided inputs, integrating HTML,
+                SQL and automated presentation generation.
+
             </p>
+
 
             <div class="project-tech">
 
-                <span class="tech">Flask</span>
+                <span class="tech">
+                    Flask
+                </span>
 
-                <span class="tech">HTML</span>
+                <span class="tech">
+                    HTML
+                </span>
 
-                <span class="tech">SQL</span>
+                <span class="tech">
+                    SQL
+                </span>
+
+                <span class="tech">
+                    Python
+                </span>
 
             </div>
+
 
         </div>
 
 
     </div>
 
+
 </section>
 
 
 
-<!-- =========================
+<!-- =====================================================
      SKILLS
-========================= -->
+===================================================== -->
 
 <section id="skills">
+
 
     <span class="section-label">
         Technical Skills
     </span>
 
+
     <h2>
-        My technical
-        <span class="gradient">toolkit.</span>
+
+        Technical
+
+        <span class="gradient">
+            expertise.
+        </span>
+
     </h2>
+
 
 
     <div class="skill-groups">
 
 
+
+        <!-- PROGRAMMING -->
+
         <div class="card skill-group">
+
 
             <h3>
                 Programming & Databases
             </h3>
 
+
             <div class="skill-pills">
 
-                <span class="pill">Python</span>
-                <span class="pill">Java</span>
-                <span class="pill">C</span>
-                <span class="pill">C++</span>
-                <span class="pill">JavaScript</span>
-                <span class="pill">HTML</span>
-                <span class="pill">CSS</span>
-                <span class="pill">SQL</span>
+                <span class="pill">
+                    Python
+                </span>
+
+                <span class="pill">
+                    Java
+                </span>
+
+                <span class="pill">
+                    C
+                </span>
+
+                <span class="pill">
+                    C++
+                </span>
+
+                <span class="pill">
+                    JavaScript
+                </span>
+
+                <span class="pill">
+                    HTML
+                </span>
+
+                <span class="pill">
+                    CSS
+                </span>
+
+                <span class="pill">
+                    SQL
+                </span>
 
             </div>
+
 
         </div>
 
 
 
+        <!-- AI -->
+
         <div class="card skill-group">
+
 
             <h3>
-                AI & Automation
+                AI & Workflow Automation
             </h3>
+
 
             <div class="skill-pills">
 
-                <span class="pill">OpenAI API</span>
-                <span class="pill">Machine Learning</span>
-                <span class="pill">Power Automate</span>
-                <span class="pill">Power Apps</span>
-                <span class="pill">n8n</span>
-                <span class="pill">Git/GitHub</span>
+                <span class="pill">
+                    OpenAI API
+                </span>
+
+                <span class="pill">
+                    Machine Learning
+                </span>
+
+                <span class="pill">
+                    Power Automate
+                </span>
+
+                <span class="pill">
+                    Power Apps
+                </span>
+
+                <span class="pill">
+                    n8n
+                </span>
+
+                <span class="pill">
+                    Git/GitHub
+                </span>
 
             </div>
+
 
         </div>
 
 
 
+        <!-- DATA -->
+
         <div class="card skill-group">
+
 
             <h3>
-                Data & Machine Learning
+                Data Science & Machine Learning
             </h3>
+
 
             <div class="skill-pills">
 
-                <span class="pill">Scikit-learn</span>
-                <span class="pill">Pandas</span>
-                <span class="pill">NumPy</span>
-                <span class="pill">Random Forest</span>
-                <span class="pill">K-Means</span>
-                <span class="pill">SVM</span>
+                <span class="pill">
+                    Scikit-learn
+                </span>
+
+                <span class="pill">
+                    Pandas
+                </span>
+
+                <span class="pill">
+                    NumPy
+                </span>
+
+                <span class="pill">
+                    Random Forest
+                </span>
+
+                <span class="pill">
+                    K-Means
+                </span>
+
+                <span class="pill">
+                    SVM
+                </span>
+
+                <span class="pill">
+                    Data Analysis
+                </span>
 
             </div>
+
 
         </div>
 
 
 
+        <!-- CYBERSECURITY -->
+
         <div class="card skill-group">
+
 
             <h3>
                 Cybersecurity
             </h3>
 
+
             <div class="skill-pills">
 
-                <span class="pill">Attack Graph Modelling</span>
-                <span class="pill">Threat Prioritisation</span>
-                <span class="pill">AES/E2E Encryption</span>
-                <span class="pill">ClamAV</span>
-                <span class="pill">API Security</span>
+                <span class="pill">
+                    Attack Graph Modelling
+                </span>
+
+                <span class="pill">
+                    Threat Prioritisation
+                </span>
+
+                <span class="pill">
+                    AES / E2E Encryption
+                </span>
+
+                <span class="pill">
+                    ClamAV
+                </span>
+
+                <span class="pill">
+                    API Security
+                </span>
 
             </div>
+
 
         </div>
 
 
     </div>
 
+
 </section>
 
 
 
-<!-- =========================
+<!-- =====================================================
      EDUCATION
-========================= -->
+===================================================== -->
 
-<section>
+<section id="education">
+
 
     <span class="section-label">
         Education
     </span>
 
+
     <h2>
+
         Academic
-        <span class="gradient">journey.</span>
+
+        <span class="gradient">
+            background.
+        </span>
+
     </h2>
+
 
 
     <div class="card education-card">
 
+
         <div>
+
 
             <h3>
                 BITS Pilani, Dubai Campus
             </h3>
 
+
             <p>
+
                 Bachelor of Engineering in Computer Science
+
                 <br>
+
                 Minor in Data Science
+
                 <br>
+
                 2023 — Present
+
             </p>
 
+
         </div>
+
 
         <div class="cgpa">
+
             CGPA 7.40
+
         </div>
 
+
     </div>
+
 
 </section>
 
 
 
-<!-- =========================
+<!-- =====================================================
      CONTACT
-========================= -->
+===================================================== -->
 
 <section id="contact">
 
+
     <div class="contact">
+
 
         <span class="section-label">
             Let's Connect
         </span>
 
+
         <h2>
-            Have a project,
-            opportunity or idea?
+
+            Open to opportunities
+
+            <span class="gradient">
+                and collaboration.
+            </span>
+
         </h2>
 
+
         <p>
-            I'm interested in opportunities involving software
-            engineering, data analytics, machine learning,
-            cybersecurity and technology.
+
+            I am interested in opportunities involving
+            software engineering, data analytics, machine
+            learning, cybersecurity and data-driven
+            technology solutions.
+
         </p>
 
 
+
         <div class="contact-links">
+
 
             <a
                 href="mailto:saachibhosale25@gmail.com"
@@ -1477,6 +2240,7 @@
             >
                 ✉ Email Me
             </a>
+
 
             <a
                 href="https://www.linkedin.com/in/saachi-bhosale-sb25"
@@ -1486,6 +2250,7 @@
                 LinkedIn ↗
             </a>
 
+
             <a
                 href="https://github.com/saachi25"
                 target="_blank"
@@ -1494,17 +2259,20 @@
                 GitHub ↗
             </a>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
 
 
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
@@ -1512,11 +2280,12 @@
 
     <br>
 
-    Built with HTML, CSS & ☕
-
+    Computer Science • Data Science • Technology
 
 </footer>
 
 
+
 </body>
+
 </html>
